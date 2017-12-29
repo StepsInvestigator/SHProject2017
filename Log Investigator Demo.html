@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"> </script>
+    <script src="http://cdn.syncfusion.com/15.4.0.20/js/web/ej.web.all.js"> </script>
+    <link href="http://cdn.syncfusion.com/15.4.0.20/js/web/flat-lime/ej.web.all.min.css" rel="stylesheet"> </link>
+    <script src=" http://yourjavascript.com/571261119382/loginvest.js"></script>
+</head>
+<body>
+    
+    <div id="Grid"></div>
+
+    <script type="text/javascript">
+        $(function () {
+            var Data = [
+        { OrderID: 10248, CustomerID: 'VINET', EmployeeID: 1, Employee: { Address: '507 - 20th Ave. E.Apt. 2A' }, Freight: 33.38, ShipName: 'Alfreds Futterkiste', ShipCountry: 'Brazil' },
+        { OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 2, Employee: { Address: '722 Moss Bay Blvd.' }, Freight: 11.61, ShipName: 'Ana Trujillo Emparedados y helados', ShipCountry: 'France' },
+        { OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 3, Employee: { Address: '908 W. Capital Way' }, Freight: 65.83, ShipName: 'Antonio Moreno Taquería', ShipCountry: 'Denmark' },
+        { OrderID: 10255, CustomerID: 'ANTON', EmployeeID: 3, Employee: { Address: '7 Houndstooth Rd.' }, Freight: 18.33, ShipName: 'Hanari Carnes', ShipCountry: 'Britain' },
+        { OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 6, Employee: { Address: '4110 Old Redmond Rd.' }, Freight: 58.17, ShipName: 'Berglunds snabbköp', ShipCountry: 'Austria' },
+        { OrderID: 10253, CustomerID: 'WELLI', EmployeeID: 9, Employee: { Address: 'Coventry HouseMiner Rd.' }, Freight: 58.17, ShipName: 'Vins et alcools Chevalier', ShipCountry: 'Mexico' },
+        { OrderID: 10254, CustomerID: 'HILLA', EmployeeID: 4, Employee: { Address: '722 Moss Bay Blvd.' }, Freight: 148.33, ShipName: 'Toms Spezialitäten', ShipCountry: 'Belgium' },
+        { OrderID: 10255, CustomerID: 'ANTON', EmployeeID: 3, Employee: { Address: '908 W. Capital Way' }, Freight: 18.33, ShipName: 'Hanari Carnes', ShipCountry: 'Britain' },
+        { OrderID: 10256, CustomerID: 'AROUT', EmployeeID: 2, Employee: { Address: '4726 - 11th Ave. N.E.' }, Freight: 13.33, ShipName: 'Hanari Carnes', ShipCountry: 'France' },
+        { OrderID: 10257, CustomerID: 'CENTC', EmployeeID: 1, Employee: { Address: '7 Houndstooth Rd.' }, Freight: 14.33, ShipName: 'Chop-suey Chinese', ShipCountry: 'Denmark' },
+        { OrderID: 10258, CustomerID: 'ANTON', EmployeeID: 3, Employee: { Address: '507 - 20th Ave. E.Apt. 2A' }, Freight: 18.33, ShipName: 'Hanari Carnes', ShipCountry: 'Britain' },
+        { OrderID: 10259, CustomerID: 'ANDREW', EmployeeID: 7, Employee: { Address: '14 Garrett Hill' }, Freight: 10.33, ShipName: 'Hanari Carnes', ShipCountry: 'Britain' },
+        { OrderID: 10260, CustomerID: "OTTIK", EmployeeID: 4, Employee: { Address: 'Coventry HouseMiner Rd.' }, ShipName: "Ottilies Käseladen", ShipCountry: "Britain", Freight: 55.0900 },
+        { OrderID: 10261, CustomerID: "QUEDE", EmployeeID: 4, Employee: { Address: '4110 Old Redmond Rd.' }, ShipName: "Que Delícia", ShipCountry: "France", Freight: 3.0500 }
+
+            ];
+            // the datasource "window.gridData" is referred from jsondata.min.js
+            var data = ej.DataManager(window.gridData).executeLocal(ej.Query().take(50));
+            $("#Grid").ejGrid({
+                dataSource: Data,
+                allowPaging: true,
+                allowSorting: true,
+                isResponsive: true,
+                columns: [
+                        { field: "OrderID", headerText: "Order ID", width: 75 , textAlign: ej.TextAlign.Right},
+                        { field: "CustomerID", headerText: "Customer ID", width: 80 },
+                        { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right, priority: 4 },
+                        { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right, priority: 3 },
+                        { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right, priority: 2 },
+                        { field: "ShipCity", headerText: "Ship City", width: 110, priority: 2 }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
