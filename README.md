@@ -2,7 +2,7 @@
 
 Now a day, customer reported issues can&#39;t be reproduce due to unable to get enough replication steps. Hence, we are giving some solution for our assumptions but most of the time, it won&#39;t be successfully resolved customer exact issues. Because of this problem, follow-ups count increases and customer gets frustrated. To overcome this problem, we are come up with a solution which is easy integration and auto replication step generator by our own JS library file.
 
-        **Log Investigator(LI) **is the process of tracking the user interaction &amp; capturing screen shot of every action on a webpage and save it on local cache memory. This process can be control by Log Investigator control board with an option like Start, Pause, Resume, Stop. Once the completed their UI interaction, he/she click the stop record. Finally, recorded user interactions are exported as html file with tabulated step by step details about user interactions with proper screenshot and action performed on the element details.
+**Log Investigator(LI)** is the process of tracking the user interaction and capturing screen shot of every action on a webpage and save it on local cache memory. This process can be control by Log Investigator control board with an option like Start, Pause, Resume, Stop. Once the completed their UI interaction, he/she click the stop record. Finally, recorded user interactions are exported as html file with tabulated step by step details about user interactions with proper screenshot and action performed on the element details.
 
 # Requirement
 
@@ -20,7 +20,7 @@ Now a day, customer reported issues can&#39;t be reproduce due to unable to get 
 
 ##      Implementation
 
-        LI library file has been implemented with JavaScript program and it is available as CDN link. Hence, user can directly refer to his/her samples as reference script tag.
+ LI library file has been implemented with JavaScript program and it is available as CDN link. Hence, user can directly refer to his/her samples as reference script tag.
 
 
          Control board will display on the page once after referred LI library file. In the control board have some controls like start, pause, resume, stop. User can also close this board using close button.
@@ -34,7 +34,7 @@ Now a day, customer reported issues can&#39;t be reproduce due to unable to get 
 
 ###         Custom Scope Support
 
-                LI also supports custom scope recording option. By using this option, user can set the specific region to the UI interactions. And, he/she can override by our public methods. The following code snippet shows how to change the default scope and instance.
+LI also supports custom scope recording option. By using this option, user can set the specific region to the UI interactions. And, he/she can override by our public methods. The following code snippet shows how to change the default scope and instance.
 
 # How to run the application
 
