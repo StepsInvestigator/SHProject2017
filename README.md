@@ -23,7 +23,7 @@ Now a day, customer reported issues can&#39;t be reproduce due to unable to get 
  LI library file has been implemented with JavaScript program and it is available as CDN link. Hence, user can directly refer to his/her samples as reference script tag.
 
 
-         Control board will display on the page once after referred LI library file. In the control board have some controls like start, pause, resume, stop. User can also close this board using close button.
+ Control board will display on the page once after referred LI library file. In the control board have some controls like start, pause, resume, stop. User can also close this board using close button.
 
 | Controls | Actions |
 | --- | --- |
